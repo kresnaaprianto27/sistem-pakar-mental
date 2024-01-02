@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.disable-scroll {
+    overflow: hidden;
+}
+
+#disable-bg-dokter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: scale(0);
+}
+
+#disable-bg-dokter.active {
+    transform: scale(1);
+    transition: .4s;
+}
+
+#disable-bg-dokter .judul-tabel {
+    color: white;
+    text-shadow: 2px 3px 3px black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    background-color: rgba(229, 255, 0, 0.6);
+    /* width: 100%; */
+    padding: 5px 10px;
+
+}
+
+#disable-bg-dokter .data-dokter {
+    width: 80%;
+    height: 550px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    /* position: relative; */
+
+
+}
+
+/* stying card */
+#disable-bg-dokter .data-dokter .card-dokter {
+    width: 400px;
+    height: 350px;
+    padding: 10px;
+    /* border: 1px solid black; */
+    /* background-color: white; */
+    position: relative;
+
+}
+
+#disable-bg-dokter .data-dokter .card-dokter img {
+    height: 100%;
+}
+
+#disable-bg-dokter .data-dokter .card-dokter h2 {
+    position: absolute;
+    top: 200px;
+    left: 80px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 0 10px;
+    
+}
+
+#disable-bg-dokter .data-dokter .card-dokter .pendidikan {
+    position: absolute;
+    top: 230px;
+    background: linear-gradient(to top, #5462ff, #782fd6);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 2px 3px 3px black;
+    font-weight: bold;
+    font-size: 15px;
+    border-left: 6px solid #3742c0;
+    height: 100px;
+}
+
+#disable-bg-dokter .data-dokter .card-dokter .spesialis {
+    position: absolute;
+    top: 310px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 5px 5px;
+}
+
+#disable-bg-dokter .data-dokter .card-dokter .contact {
+    position: absolute;
+    top: 340px;
+    background: linear-gradient(to top, #199c14, #20cc8a);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 3px 3px black;
+
+}
+#disable-bg-dokter .data-dokter .btn-close {
+    font-weight: bolder;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    padding: 15px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    z-index: 1000;
+    border: 3px solid white;
+}
+#disable-bg-dokter .data-dokter .btn-close:hover {
+    background-color: rgb(63, 63, 63);
+}
